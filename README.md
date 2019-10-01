@@ -65,7 +65,7 @@ Check that SPI is present:
 ```
 ls /dev | grep spi
 ```
-<img src="gitImgs/spi_check.PNG" alt="SPI check" width="400" height="44" title="SPI check">
+<img src="gitImgs/spi_check.png" alt="SPI check" width="400" height="44" title="SPI check">
 
 
 ## Installation
