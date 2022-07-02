@@ -96,11 +96,7 @@ python ./OrangePiZeroMFRC522/MFRC522-python/Read.py
 
 ## Customizations
 
-Swipe RFID chip >> Run command/script associated with that RFID tag. A hardware spin off of https://github.com/BiTinerary/PersonalAPI
-
-[triggerRead.py](https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/triggerRead.py) is the same source as original **Read.py** with a few modifications, mainly in the middle. Print statements were removed throughout the source files (dump/read/MFRC/Write) just to clean up the output. I added a **hashFile.txt** which stores the UID of RFID chips as keys and commands as values. So that effectively when a RFID chip is scanned, a corresponding command is executed. This all happens [line 45-58](https://github.com/BiTinerary/OrangePiZeroMFRC522/blob/master/triggerRead.py#L45-L58)
-
-I'm using a practical version of this repo and the triggerRead.py script mentioned above for a Google Sheet/API punching TimeClock, over here: https://github.com/BiTinerary/TimeClockPi
+[triggerRead.py](./triggerRead.py) is the same source as original **Read.py** with a few modifications, mainly in the middle. Print statements were removed throughout the source files (dump/read/MFRC/Write) just to clean up the output. I added a **hashFile.txt** which stores the UID of RFID chips as keys and commands as values. So that effectively when a RFID chip is scanned, a corresponding command is executed. This all happens [line 45-58](./triggerRead.py#L45-L58)
 
 ## References
 The main MFRC522 script in this repo is just a modified fork of https://github.com/mxgxw/MFRC522-python  
